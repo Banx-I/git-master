@@ -27,8 +27,11 @@
 
 body {
   margin: 0;
-  padding-top: 4rem;
+  font-family: "Lato", sans-serif;
 }
 
 //imports
 @import "./components/layout.scss";
+@import "./components/grid.scss";
+@import "./components/header.scss";
+@import "./components/nav.scss";

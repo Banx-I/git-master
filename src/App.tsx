@@ -1,9 +1,10 @@
+import Header from "./components/header";
 import Layout from "./components/layout";
-import "./App.css";
 
 const App = () => {
   return (
     <>
+      <Header />
       <Layout>Hello world</Layout>
     </>
   );
