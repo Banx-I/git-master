@@ -30,8 +30,13 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-//imports
+//IMPORTS
+//components
 @import "./components/layout.scss";
 @import "./components/grid.scss";
 @import "./components/header.scss";
 @import "./components/nav.scss";
+@import "./components/tag.scss";
+
+//utils
+@import "./utils/margins.scss";

@@ -4,6 +4,8 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import NoMatch from "./pages/no-match";
+import Mewtwo from "./pages/mewtwo";
+import Croatia from "./pages/croatia";
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="mewtwo" element={<Mewtwo />} />
+          <Route path="croatia" element={<Croatia />} />
           <Route path="about" element={<About />}>
             <Route path="history" element={"History"} />
           </Route>
