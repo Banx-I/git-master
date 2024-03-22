@@ -1,0 +1,10 @@
+.field {
+  margin-bottom: 1rem;
+  &__label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  &__group {
+    display: flex;
+  }
+}

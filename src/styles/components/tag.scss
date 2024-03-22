@@ -7,4 +7,12 @@
   &:last-child {
     margin-right: 0;
   }
+
+  &__wrapper {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    color: var(--color-black);
+    flex-wrap: wrap;
+  }
 }

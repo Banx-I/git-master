@@ -32,10 +32,14 @@ body {
 
 //IMPORTS
 //components
-@import "./components/layout.scss";
+@import "./components/button.scss";
+@import "./components/field.scss";
 @import "./components/grid.scss";
 @import "./components/header.scss";
+@import "./components/input.scss";
+@import "./components/layout.scss";
 @import "./components/nav.scss";
+@import "./components/profile.scss";
 @import "./components/tag.scss";
 
 //utils
