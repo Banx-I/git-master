@@ -3,6 +3,6 @@ import { ButtonHTMLAttributes } from "react";
 type Props = {} & ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = ({ ...props }: Props) => {
-  return <button {...props}></button>;
+  return <button className="button" {...props}></button>;
 };
 export default Button;

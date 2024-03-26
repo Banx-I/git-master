@@ -7,6 +7,8 @@ import NoMatch from "./pages/no-match";
 import Mewtwo from "./pages/mewtwo";
 import Croatia from "./pages/croatia";
 import ProfileMaker from "./pages/profile-maker";
+import Vjezbe from "./pages/vjezbe";
+import DataTypes from "./pages/data-types";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="mewtwo" element={<Mewtwo />} />
           <Route path="croatia" element={<Croatia />} />
+          <Route path="vjezbe" element={<Vjezbe />} />
+          <Route path="data-types" element={<DataTypes />} />
           <Route path="profile-maker" element={<ProfileMaker />} />
           <Route path="about" element={<About />}>
             <Route path="history" element={"History"} />
