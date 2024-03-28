@@ -9,6 +9,7 @@ import Croatia from "./pages/croatia";
 import ProfileMaker from "./pages/profile-maker";
 import Vjezbe from "./pages/vjezbe";
 import DataTypes from "./pages/data-types";
+import Gallery from "./pages/gallery";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="mewtwo" element={<Mewtwo />} />
           <Route path="croatia" element={<Croatia />} />
+          <Route path="gallery" element={<Gallery />} />
           <Route path="vjezbe" element={<Vjezbe />} />
           <Route path="data-types" element={<DataTypes />} />
           <Route path="profile-maker" element={<ProfileMaker />} />
