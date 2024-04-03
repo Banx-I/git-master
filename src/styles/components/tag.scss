@@ -7,6 +7,13 @@
   &:last-child {
     margin-right: 0;
   }
+  &--md {
+    padding: 0.25rem 0.5rem;
+  }
+  &--sm {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+  }
 
   &__wrapper {
     display: flex;
@@ -14,5 +21,8 @@
     justify-content: center;
     color: var(--color-black);
     flex-wrap: wrap;
+    &--left {
+      justify-content: flex-start;
+    }
   }
 }

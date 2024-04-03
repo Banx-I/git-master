@@ -13,12 +13,17 @@
   --color-yellow-400: #f1c40f;
   --color-yellow-500: #f39c12;
 
+  --color-blue-400: #3498db;
+  --color-blue-500: #2980b9;
+
   --color-gray-100: #ecf0f1;
   --color-gray-200: #bdc3c7;
   --color-gray-300: #95a5a6;
   --color-gray-400: #7f8c8d;
   --color-gray-600: #34495e;
   --color-gray-700: #2c3e50;
+  --color-gray-800: #25323e;
+  --color-gray-900: #1e262d;
 }
 
 * {
@@ -33,6 +38,7 @@ body {
 //IMPORTS
 //components
 @import "./components/button.scss";
+@import "./components/container.scss";
 @import "./components/field.scss";
 @import "./components/gallery.scss";
 @import "./components/grid.scss";
@@ -41,8 +47,11 @@ body {
 @import "./components/layout.scss";
 @import "./components/link.scss";
 @import "./components/nav.scss";
+@import "./components/personal.scss";
 @import "./components/profile.scss";
 @import "./components/tag.scss";
 
 //utils
+@import "./utils/display.scss";
+@import "./utils/flex.scss";
 @import "./utils/margins.scss";
