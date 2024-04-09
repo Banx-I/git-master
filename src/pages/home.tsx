@@ -27,7 +27,7 @@ const data: ProfileDataType = {
   country: "Croatia",
   city: "Osijek",
   profileDescription: "I'm frontend developer based in Osijek.",
-  skills: ["UX/UI design", "HTML/CSS", "JS/TS", "React", "Shopify"],
+  skills: ["UX/UI design", "HTML/XML", "CSS/SASS", "JS/TS", "React", "Shopify"],
   experience:
     "I specialise in UX/UI, frontend development and i love creating animations.",
   aboutMe:

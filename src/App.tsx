@@ -10,6 +10,7 @@ import ProfileMaker from "./pages/profile-maker";
 import Vjezbe from "./pages/vjezbe";
 import DataTypes from "./pages/data-types";
 import Gallery from "./pages/gallery";
+import Tabs from "./pages/tabs";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="vjezbe" element={<Vjezbe />} />
           <Route path="data-types" element={<DataTypes />} />
           <Route path="profile-maker" element={<ProfileMaker />} />
+          <Route path="tabs" element={<Tabs />} />
           <Route path="about" element={<About />}>
             <Route path="history" element={"History"} />
           </Route>
