@@ -11,6 +11,8 @@ import Vjezbe from "./pages/vjezbe";
 import DataTypes from "./pages/data-types";
 import Gallery from "./pages/gallery";
 import Tabs from "./pages/tabs";
+import Games from "./pages/games";
+import GameInfo from "./pages/game-info";
 
 const App = () => {
   return (
@@ -25,6 +27,10 @@ const App = () => {
           <Route path="data-types" element={<DataTypes />} />
           <Route path="profile-maker" element={<ProfileMaker />} />
           <Route path="tabs" element={<Tabs />} />
+          <Route path="games">
+            <Route index element={<Games />} />
+            <Route path=":gameId" element={<GameInfo />} />
+          </Route>
           <Route path="about" element={<About />}>
             <Route path="history" element={"History"} />
           </Route>
