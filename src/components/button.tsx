@@ -38,6 +38,7 @@ const Button = ({
         return "purple";
     }
   };
+
   return (
     <button
       className={`button button--${getSizeClass()} button--${getColorClass()}`}
