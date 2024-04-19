@@ -16,6 +16,9 @@
   --color-blue-400: #3498db;
   --color-blue-500: #2980b9;
 
+  --color-red-400: #db3131;
+  --color-red-500: #bd1d1d;
+
   --color-gray-100: #ecf0f1;
   --color-gray-200: #bdc3c7;
   --color-gray-300: #95a5a6;
@@ -46,6 +49,7 @@ body {
 @import "./components/field.scss";
 @import "./components/gallery.scss";
 @import "./components/games.scss";
+@import "./components/glovo.scss";
 @import "./components/grid.scss";
 @import "./components/header.scss";
 @import "./components/input.scss";
@@ -62,3 +66,7 @@ body {
 @import "./utils/display.scss";
 @import "./utils/flex.scss";
 @import "./utils/margins.scss";
+
+//overrides
+@import "./overrides/react-date-picker.scss";
+@import "./overrides/react-time-picker.scss";

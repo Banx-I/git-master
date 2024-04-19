@@ -14,6 +14,7 @@ import Tabs from "./pages/tabs";
 import Games from "./pages/games";
 import GameInfo from "./pages/game-info";
 import Cars from "./pages/cars";
+import Glovo from "./pages/glovo";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="gallery" element={<Gallery />} />
           <Route path="vjezbe" element={<Vjezbe />} />
           <Route path="data-types" element={<DataTypes />} />
+          <Route path="glovo" element={<Glovo />} />
           <Route path="profile-maker" element={<ProfileMaker />} />
           <Route path="tabs" element={<Tabs />} />
           <Route path="cars" element={<Cars />} />
