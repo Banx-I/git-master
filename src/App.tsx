@@ -15,6 +15,7 @@ import Games from "./pages/games";
 import GameInfo from "./pages/game-info";
 import Cars from "./pages/cars";
 import Glovo from "./pages/glovo";
+import Vjezba25042024 from "./pages/vjezba25042024";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="profile-maker" element={<ProfileMaker />} />
           <Route path="tabs" element={<Tabs />} />
           <Route path="cars" element={<Cars />} />
+          <Route path="vjezba25042024" element={<Vjezba25042024 />} />
           <Route path="games">
             <Route index element={<Games />} />
             <Route path=":gameId" element={<GameInfo />} />
