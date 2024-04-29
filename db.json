@@ -1,0 +1,108 @@
+{
+  "phones": [
+    {
+      "id": "1",
+      "brand": "Apple",
+      "model": "iPhone 13 Pro",
+      "storage": "128GB",
+      "color": "Graphite",
+      "price": 999
+    },
+    {
+      "id": "2",
+      "brand": "Samsung",
+      "model": "Galaxy S21 Ultra",
+      "storage": "256GB",
+      "color": "Phantom Black",
+      "price": 1199
+    },
+    {
+      "id": "3",
+      "brand": "Google",
+      "model": "Pixel 6 Pro",
+      "storage": "128GB",
+      "color": "Stormy Black",
+      "price": 899
+    },
+    {
+      "id": "4",
+      "brand": "OnePlus",
+      "model": "9 Pro",
+      "storage": "256GB",
+      "color": "Morning Mist",
+      "price": 1069
+    },
+    {
+      "id": "5",
+      "brand": "Xiaomi",
+      "model": "Mi 11 Ultra",
+      "storage": "256GB",
+      "color": "Ceramic White",
+      "price": 1199
+    },
+    {
+      "id": "6",
+      "brand": "Sony",
+      "model": "Xperia 1 III",
+      "storage": "256GB",
+      "color": "Frosted Black",
+      "price": 1299
+    },
+    {
+      "id": "7",
+      "brand": "Huawei",
+      "model": "P40 Pro+",
+      "storage": "512GB",
+      "color": "Ceramic White",
+      "price": 1399
+    },
+    {
+      "id": "8",
+      "brand": "LG",
+      "model": "Wing 5G",
+      "storage": "256GB",
+      "color": "Aurora Gray",
+      "price": 999
+    },
+    {
+      "id": "9",
+      "brand": "Motorola",
+      "model": "Edge+",
+      "storage": "256GB",
+      "color": "Thunder Grey",
+      "price": 999
+    },
+    {
+      "id": "10",
+      "brand": "Oppo",
+      "model": "Find X3 Pro",
+      "storage": "256GB",
+      "color": "Gloss Black",
+      "price": 1099
+    },
+    {
+      "id": "82699522-50f3-476e-b9e1-25e9e45fa85f",
+      "storage": "bvjmcvghncvgn",
+      "color": "vbhjmcgncvfg",
+      "price": 354734,
+      "model": "ghmcfgncf",
+      "brand": "hnftbhdtf"
+    },
+    {
+      "id": "ab3254cd-502a-4dd6-9e7f-1795ef305b43",
+      "storage": "dsrghdsrg",
+      "color": "drghdrg",
+      "price": 35,
+      "model": "drghdrg",
+      "brand": "hdsrg"
+    },
+    {
+      "id": "3ad58beb-2961-4777-84b3-9182559142c2",
+      "storage": "zfjtfk",
+      "color": "cfghndtf",
+      "price": 23462,
+      "model": "cfncfbn",
+      "brand": "fthftbh"
+    }
+  ]
+}

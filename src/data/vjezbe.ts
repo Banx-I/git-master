@@ -49,4 +49,8 @@ export const vjezbeLinks: LinkType[] = [
     label: "Vježba 24.04.2024.",
     href: "/vjezba25042024",
   },
+  {
+    label: "Phones",
+    href: "/phones",
+  },
 ];
