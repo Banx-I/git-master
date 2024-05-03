@@ -18,6 +18,7 @@ import Glovo from "./pages/glovo";
 import Vjezba25042024 from "./pages/vjezba25042024";
 import Phones from "./pages/phones";
 import PhonesCreate from "./pages/phones-create";
+import Spotify from "./pages/spotify";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="tabs" element={<Tabs />} />
           <Route path="cars" element={<Cars />} />
           <Route path="phones" element={<Phones />} />
+          <Route path="spotify" element={<Spotify />} />
           <Route path="phones">
             <Route index element={<Phones />} />
             <Route path="new" element={<PhonesCreate />} />

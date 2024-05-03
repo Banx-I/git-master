@@ -53,4 +53,8 @@ export const vjezbeLinks: LinkType[] = [
     label: "Phones",
     href: "/phones",
   },
+  {
+    label: "Spotify",
+    href: "/spotify",
+  },
 ];
