@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { GameType, gamesData } from "./games";
 import { useEffect, useState } from "react";
 
+
 const GameInfo = () => {
   const { gameId } = useParams();
   const [data, setData] = useState<GameType>();

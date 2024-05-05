@@ -1,6 +1,6 @@
 import { navigationData } from "../data/nav";
 import Navigation from "./navigation";
-import logoImg from "../assets/logo.png";
+import logoImg from "../assets/Brown Simple Icon Food Logo.png";
 
 const Header = () => {
   return (

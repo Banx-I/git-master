@@ -1,30 +1,45 @@
 import sedanCar from "../assets/sedan.png";
-import suvCar from "../assets/car.png";
+import suvCar from "../assets/pngwing.com.png";
 import luxuryCar from "../assets/supercar.png";
 
 type CarType = {
   title: string;
-  description: string;
+  description: string[][];
   img: string | undefined;
 };
 
 const data: CarType[] = [
   {
     title: "SEDANS",
-    description:
-      "Chose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.",
+    description: [
+      ["Choose a sedan for its affordability and excellent fuel economy."],
+      ["Ideal for cruising in the city or on your next road trip."],
+      ["Spacious seating for up to five passengers."],
+      ["Advanced safety features for peace of mind."],
+      ["Great for daily commuting or long-distance travel."]
+    ],
     img: sedanCar,
   },
   {
     title: "SUVS",
-    description:
-      "Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.",
+    description: [
+      ["Choose a sedan for its affordability and excellent fuel economy."],
+      ["Ideal for cruising in the city or on your next road trip."],
+      ["Spacious seating for up to five passengers."],
+      ["Advanced safety features for peace of mind."],
+      ["Great for daily commuting or long-distance travel."]
+    ],
     img: suvCar,
   },
   {
     title: "LUXURY",
-    description:
-      "Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style",
+    description: [
+      ["Choose a sedan for its affordability and excellent fuel economy."],
+      ["Ideal for cruising in the city or on your next road trip."],
+      ["Spacious seating for up to five passengers."],
+      ["Advanced safety features for peace of mind."],
+      ["Great for daily commuting or long-distance travel."]
+    ],
     img: luxuryCar,
   },
 ];
@@ -42,7 +57,13 @@ const Cars = () => {
                 alt="Icon of a sedan car"
               />
               <h2 className="cars__title">{car.title}</h2>
-              <p className="cars__desc">{car.description}</p>
+              <ul className="cars__desc">
+            {car.description.map((item, index) => (
+              <li key={index}>
+                 {item}
+              </li>
+            ))}
+          </ul>
               <button className="cars__btn">Learn More</button>
             </div>
           );
