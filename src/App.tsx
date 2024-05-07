@@ -39,7 +39,8 @@ const App = () => {
           <Route path="spotify" element={<Spotify />} />
           <Route path="phones">
             <Route index element={<Phones />} />
-            <Route path="new" element={<PhonesCreate />} />
+            <Route path="new" element={<PhonesCreate isEdit={false} />} />
+            <Route path=":id" element={<PhonesCreate isEdit={true} />} />
           </Route>
           <Route path="vjezba25042024" element={<Vjezba25042024 />} />
           <Route path="games">

@@ -4,7 +4,8 @@ import * as yup from "yup";
 import { PhoneType } from "./phones";
 import Button from "../components/button";
 import { v4 as uuidv4 } from "uuid";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const schema = yup.object().shape({
   brand: yup.string().required("Brand name is required"),
@@ -20,18 +21,53 @@ const schema = yup.object().shape({
 
 type FormValues = Omit<PhoneType, "id">;
 
-const PhonesCreate = () => {
+type Props = {
+  isEdit: boolean;
+};
+
+const PhonesCreate = ({ isEdit }: Props) => {
   const navigate = useNavigate();
+  const { id } = useParams() as { id: string };
+  const [data, setData] = useState<PhoneType>();
 
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<FormValues>({
     resolver: yupResolver(schema),
   });
 
-  const putData = (values: PhoneType) => {
+  const getData = (id: string) => {
+    fetch(`http://localhost:3000/phones/${id}`)
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        } else {
+          console.log(res.statusText);
+          alert(res.statusText);
+          return;
+        }
+      })
+      .then((data) => {
+        setData(data);
+      });
+  };
+
+  useEffect(() => {
+    if (isEdit) {
+      getData(id);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isEdit && data) {
+      reset({ ...data });
+    }
+  }, [reset, data]);
+
+  const postData = (values: PhoneType) => {
     fetch("http://localhost:3000/phones", {
       method: "POST",
       headers: {
@@ -53,14 +89,39 @@ const PhonesCreate = () => {
       });
   };
 
+  const editData = (id: string, values: PhoneType) => {
+    fetch(`http://localhost:3000/phones/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
+    })
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        } else {
+          alert(res.statusText);
+          return;
+        }
+      })
+      .then(() => {
+        //go back
+        navigate(-1);
+      });
+  };
+
   const onSubmit: SubmitHandler<FormValues> = (data) => {
-    console.log(data);
     const values: PhoneType = {
       ...data,
-      id: uuidv4(),
+      id: isEdit ? id : uuidv4(),
     };
 
-    putData(values);
+    if (isEdit) {
+      editData(id, values);
+    } else {
+      postData(values);
+    }
   };
 
   return (
@@ -136,7 +197,7 @@ const PhonesCreate = () => {
             <p className="field__validation">{errors.price.message}</p>
           )}
         </div>
-        <Button color="blue">Submit</Button>
+        <Button color="blue">{isEdit ? "Edit phone" : "Create new"}</Button>
       </form>
     </>
   );

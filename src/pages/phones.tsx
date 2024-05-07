@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import IconEdit from "../assets/edit";
 
 export type PhoneType = {
   id: string;
@@ -12,6 +13,7 @@ export type PhoneType = {
 
 const Phones = () => {
   const [data, setData] = useState<PhoneType[]>([]);
+  const navigate = useNavigate();
 
   const getData = () => {
     fetch("http://localhost:3000/phones")
@@ -100,8 +102,20 @@ const Phones = () => {
                     <td>{color}</td>
                     <td>{price}</td>
                     <td>
-                      <span>X</span>
-                      <span>Edit</span>
+                      <span
+                        onClick={() => {
+                          deleteData(id);
+                        }}
+                      >
+                        X
+                      </span>
+                      <span
+                        onClick={() => {
+                          navigate(`/phones/${id}`);
+                        }}
+                      >
+                        <IconEdit />
+                      </span>
                     </td>
                   </tr>
                 </>
