@@ -57,14 +57,6 @@
       "price": 1399
     },
     {
-      "id": "8",
-      "brand": "LG",
-      "model": "Wing 5G",
-      "storage": "256GB",
-      "color": "Aurora Gray",
-      "price": 999
-    },
-    {
       "id": "9",
       "brand": "Motorola",
       "model": "Edge+",
@@ -81,28 +73,20 @@
       "price": 1099
     },
     {
-      "id": "82699522-50f3-476e-b9e1-25e9e45fa85f",
-      "storage": "bvjmcvghncvgn",
-      "color": "vbhjmcgncvfg",
-      "price": 354734,
-      "model": "ghmcfgncf",
-      "brand": "hnftbhdtf"
+      "storage": "256GB",
+      "color": "Space gray",
+      "price": 1099,
+      "model": "iPhone X",
+      "brand": "Apple",
+      "id": "82699522-50f3-476e-b9e1-25e9e45fa85f"
     },
     {
-      "id": "ab3254cd-502a-4dd6-9e7f-1795ef305b43",
-      "storage": "dsrghdsrg",
-      "color": "drghdrg",
-      "price": 35,
-      "model": "drghdrg",
-      "brand": "hdsrg"
-    },
-    {
-      "id": "3ad58beb-2961-4777-84b3-9182559142c2",
-      "storage": "zfjtfk",
-      "color": "cfghndtf",
-      "price": 23462,
-      "model": "cfncfbn",
-      "brand": "fthftbh"
+      "id": "0c9911bf-9403-46ad-a6cc-9722d26dbc4a",
+      "storage": "dfbsdb",
+      "color": "sdbds",
+      "price": 23,
+      "model": "sdb",
+      "brand": "Motorola"
     }
   ]
 }
